@@ -1,5 +1,5 @@
 # Some Useful Software Developement Tools
-This repo was created for a talk on software development tools for scientists.
+This repo was created for a talk on software development tools for scientists. Instructions for examples including other repos or code not in this repo are left in the notebook `main.ipynb`.
 ## Debbugging
 ### Example 1
 We introduce `ipdb` with `debugging_example_1.py`. The idea is to show that one can use `ipdb` instead of adding prints everywhere, allowing us to decide dynamically what to “print”.
@@ -150,7 +150,7 @@ To illustrate what's the interest of PBT, we show how we can test for a general 
 ```bash
 pytest -v test_distance_symmetry.py
 ```
-To show that `hypothesis` finds the minimal non-working example.
+To show that `hypothesis` finds the *minimal* counterexample to the property.
 ```Bash
 pytest test_capped_sum.py --hypothesis-verbosity=debug --hypothesis-show-statistics
 ```
