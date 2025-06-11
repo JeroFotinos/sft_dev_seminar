@@ -146,3 +146,11 @@ pytest -v <carpeta con los tests>  --cov <carpeta con el código> --cov-fail-und
 ```
 
 ### Property-Based Testing
+To illustrate what's the interest of PBT, we show how we can test for a general property like symmetry of a distance:
+```bash
+pytest -v test_distance_symmetry.py
+```
+To show that `hypothesis` finds the minimal non-working example.
+```Bash
+pytest test_capped_sum.py --hypothesis-verbosity=debug --hypothesis-show-statistics
+```

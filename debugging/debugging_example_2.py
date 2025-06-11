@@ -5,8 +5,10 @@ import numpy as np
 # Set the desired precision (e.g., 50 decimal places)
 getcontext().prec = 50
 
+
 def distance(p, q):
     return np.linalg.norm(np.array(p) - np.array(q))
+
 
 def check_distance(vector_1, vector_2, target):
     d = distance(vector_1, vector_2)
@@ -15,6 +17,7 @@ def check_distance(vector_1, vector_2, target):
         print("Correct distance calculation :)")
     else:
         print(f"There's some type of error :(")
+
 
 if __name__ == "__main__":
     p = (0.0, 0.0)
