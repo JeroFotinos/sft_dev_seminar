@@ -1,5 +1,5 @@
 def filter_and_sort(temps, threshold):
-    import ipdb; ipdb.set_trace()
+    # import ipdb; ipdb.set_trace()
     filtered = [t for t in temps if t > threshold]
     sorted_temps = filtered.sort()
     return sorted_temps
