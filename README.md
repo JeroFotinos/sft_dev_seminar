@@ -1,5 +1,26 @@
 # Some Useful Software Developement Tools
-This repo was created for a talk on software development tools for scientists. Instructions for examples including other repos or code not in this repo are left in the notebook `main.ipynb`.
+This repo was created for a talk on software development tools for scientists. Contents:
+
+0. Coding Environments
+1. Debbuging
+2. Virtual Environment
+3. Version Control (& GitHub)
+4. Packing
+5. Testing
+6. Style (of code and documentation)
+7. Tox (Orchestration)
+8. Software Design (Good Design, SOLID, and Design Patterns)
+
+The main file for the seminar is the notebook `main.ipynb`. That file indicates that the reader should follow the instructions below for the examples on debugging.
+
+For running the examples, you'll need some dependencies that you can install as needed, or you can simply install everything in my requirement files:
+```bash
+pip install -r usual_requirements.txt
+pip install -r dev-requirements.txt
+```
+
+Disclaimer: `main.ipynb` points to examples including code in other repos not presented here. Should you really need to see those parts, you can contact me via [email](mailto:jerofotinos@gmail.com).
+
 ## Debbugging
 ### Example 1
 We introduce `ipdb` with `debugging_example_1.py`. The idea is to show that one can use `ipdb` instead of adding prints everywhere, allowing us to decide dynamically what to “print”.
